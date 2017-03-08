@@ -2,6 +2,8 @@
 
 This Universal Windows Application (UWP) shows off how to use PlayFab authentiation with Microsoft Passport for UWP.
 
+Before launching the application you must set the Title ID in `App.InitializePlayFab()`
+
 ### General Flow
 
 #### Registration
