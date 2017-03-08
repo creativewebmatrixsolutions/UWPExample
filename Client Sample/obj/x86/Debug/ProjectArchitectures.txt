@@ -1,0 +1,2 @@
+C:\Users\Siva Katir\Desktop\UWP-PlayFab\Client Sample\MicrosoftPassport.csproj;x86
+C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\PlayFabSDK.csproj;neutral

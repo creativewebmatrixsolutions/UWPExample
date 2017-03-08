@@ -1,0 +1,14 @@
+C:\Users\Siva Katir\Desktop\Windows-universal-samples-master\Samples\MicrosoftPassport\PlayFabClientSDK\bin\Debug\PlayFabClientSDK.dll
+C:\Users\Siva Katir\Desktop\Windows-universal-samples-master\Samples\MicrosoftPassport\PlayFabClientSDK\bin\Debug\PlayFabClientSDK.pdb
+C:\Users\Siva Katir\Desktop\Windows-universal-samples-master\Samples\MicrosoftPassport\PlayFabClientSDK\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Siva Katir\Desktop\Windows-universal-samples-master\Samples\MicrosoftPassport\PlayFabClientSDK\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Siva Katir\Desktop\Windows-universal-samples-master\Samples\MicrosoftPassport\PlayFabClientSDK\obj\Debug\PlayFabSDK.csprojResolveAssemblyReference.cache
+C:\Users\Siva Katir\Desktop\Windows-universal-samples-master\Samples\MicrosoftPassport\PlayFabClientSDK\obj\Debug\PlayFabClientSDK.dll
+C:\Users\Siva Katir\Desktop\Windows-universal-samples-master\Samples\MicrosoftPassport\PlayFabClientSDK\obj\Debug\PlayFabClientSDK.pdb
+C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\bin\Debug\PlayFabClientSDK.dll
+C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\bin\Debug\PlayFabClientSDK.pdb
+C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\obj\Debug\PlayFabSDK.csprojResolveAssemblyReference.cache
+C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\obj\Debug\PlayFabClientSDK.dll
+C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\obj\Debug\PlayFabClientSDK.pdb

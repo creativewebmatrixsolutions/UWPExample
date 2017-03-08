@@ -1,0 +1,42 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="SDKTemplate.AccountOverviewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource Grey02Brush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="{StaticResource Grey06Brush}">
+            <TextBlock Text="&#x1f3e6; PlayFab Sample" FontSize="25" HorizontalAlignment="Left" Height="36" Margin="6"/>
+            <Button x:ConnectionId='6' HorizontalAlignment="Right" VerticalAlignment="Top" Content="Sign out"                          Margin="10"/>
+        </Grid>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Margin="24">
+                <TextBlock x:ConnectionId='2' Style="{ThemeResource HeaderTextBlockStyle}" Foreground="{StaticResource WhiteBrush}" Text="Details"                             />
+
+                <Grid Background="{StaticResource Grey07Brush}" Margin="0,0,0,24">
+                    <StackPanel Margin="6,6,6,0">
+                        
+                        <TextBlock Text="User Name"/>
+                        <TextBlock x:ConnectionId='3' x:Name="UserName" FontSize="18"/>
+                        
+                        <TextBlock Text="ID"/>
+                        <TextBlock x:ConnectionId='4' x:Name="PlayFabId"/>
+
+                        <TextBlock Text="JSON"/>
+                        <TextBlock x:ConnectionId='5' x:Name="JsonData"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
+
