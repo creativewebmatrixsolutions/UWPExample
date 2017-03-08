@@ -22,11 +22,11 @@ From this point the SDK will automatically be authenticated until the session ti
 	- PlayFab: The public key hint
 	- Windows: The user name
 
- - Call `PlayFabClientAPI.GetWindowsHelloChallengeAsync` to create a signing challenge.
- - Call `CryptographicBuffer.DecodeFromBase64String` to create an IBuffer for the KeyCredentialManager to have the user sign.
- - Call `var retrieveResult = await KeyCredentialManager.OpenAsync(userId)` to create a key signing service
- - Get the credential for this user `var userCredential = retrieveResult.Credential`
- - Call `await userCredential.RequestSignAsync(challengeBuffer)` to have Windows request the user sign the server's challenge for this user
+- Call `PlayFabClientAPI.GetWindowsHelloChallengeAsync` to create a signing challenge.
+- Call `CryptographicBuffer.DecodeFromBase64String` to create an IBuffer for the KeyCredentialManager to have the user sign.
+- Call `var retrieveResult = await KeyCredentialManager.OpenAsync(userId)` to create a key signing service
+- Get the credential for this user `var userCredential = retrieveResult.Credential`
+- Call `await userCredential.RequestSignAsync(challengeBuffer)` to have Windows request the user sign the server's challenge for this user
 
 ### Sample methods that call PlayFab
 
