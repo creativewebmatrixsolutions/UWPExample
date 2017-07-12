@@ -39,7 +39,7 @@ namespace SDKTemplate
         public void InitializePlayFab()
         {
             // TODO: Place Title ID Here
-            PlayFab.PlayFabSettings.TitleId = "47e2";
+            PlayFab.PlayFabSettings.TitleId = "";
         }
  
         /// <summary>
