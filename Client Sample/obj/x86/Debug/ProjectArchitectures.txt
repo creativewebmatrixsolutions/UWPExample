@@ -1,2 +1,0 @@
-C:\Users\Siva Katir\Documents\GitHub\UWPExample\Client Sample\MicrosoftPassport.csproj;x86
-C:\Users\Siva Katir\Documents\GitHub\UWPExample\PlayFabClientSDK\PlayFabSDK.csproj;neutral
