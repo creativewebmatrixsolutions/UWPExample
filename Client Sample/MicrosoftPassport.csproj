@@ -98,6 +98,7 @@
     <Compile Include="..\SharedContent\cs\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="PlayFabWindowsHello.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="AccountOverviewPage.xaml.cs">
       <DependentUpon>AccountOverviewPage.xaml</DependentUpon>

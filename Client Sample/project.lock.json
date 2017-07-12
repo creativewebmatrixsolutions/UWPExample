@@ -2211,9 +2211,6 @@
             "rid": "aot"
           }
         }
-      },
-      "PlayFabSDK/1.0.0": {
-        "type": "project"
       }
     },
     "UAP,Version=v10.0/win10-arm": {
@@ -4509,9 +4506,6 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "PlayFabSDK/1.0.0": {
-        "type": "project"
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
@@ -6846,9 +6840,6 @@
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "PlayFabSDK/1.0.0": {
-        "type": "project"
       }
     },
     "UAP,Version=v10.0/win10-x64": {
@@ -9153,9 +9144,6 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "PlayFabSDK/1.0.0": {
-        "type": "project"
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
@@ -11499,9 +11487,6 @@
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "PlayFabSDK/1.0.0": {
-        "type": "project"
       }
     },
     "UAP,Version=v10.0/win10-x86": {
@@ -13806,9 +13791,6 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "PlayFabSDK/1.0.0": {
-        "type": "project"
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
@@ -16152,9 +16134,6 @@
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "PlayFabSDK/1.0.0": {
-        "type": "project"
       }
     }
   },
@@ -16217,14 +16196,14 @@
       ]
     },
     "Microsoft.Net.Native.Compiler/1.6.0": {
-      "sha512": "ZWKiTdHteE3oSVoD6y2wb2k//Om2M5oMx8qIHXUbYdCCXvGL8isMnlwfIKmeft3L57imGDwd8PknuE588I4KeA==",
+      "sha512": "MmdMXM5i/H6QYEk+DtCkMwIxpMbmaraYB7Sonot5GvFHsxzW3ZHS6F0gi+E3pfyrO9tLeifhElvGvW4QFK1UYw==",
       "type": "package",
       "path": "microsoft.net.native.compiler/1.6.0",
       "files": [
-        "Microsoft.Net.Native.Compiler.1.6.0.nupkg.sha512",
-        "Microsoft.Net.Native.Compiler.nuspec",
         "build/Microsoft.Net.Native.Compiler.props",
         "build/Microsoft.Net.Native.Compiler.targets",
+        "microsoft.net.native.compiler.1.6.0.nupkg.sha512",
+        "microsoft.net.native.compiler.nuspec",
         "tools/LibraryXML/Callisto.rd.xml",
         "tools/LibraryXML/GalaSoft.MvvmLight.Extras.Win8.rd.xml",
         "tools/LibraryXML/GalaSoft.MvvmLight.Win8.rd.xml",
@@ -17112,14 +17091,14 @@
       ]
     },
     "Microsoft.Net.Native.SharedLibrary-arm/1.6.0": {
-      "sha512": "6tms4tVQoedKirFMs8q6qCLESDW3uAmFLWwUOB4lKDGtN+MHktTvA+VomsOWYtI//ByH1VSCIBvHVIqiNY8HXQ==",
+      "sha512": "ChcAhKNCiys3rLMuB+bPgEzE/9F8PRR8zDbgbY0TCN779DXI7VGcTYoJRLHI2ilaYbrQN4CPYQbaAk7B9DNQPQ==",
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-arm/1.6.0",
       "files": [
-        "Microsoft.Net.Native.SharedLibrary-arm.1.6.0.nupkg.sha512",
-        "Microsoft.Net.Native.SharedLibrary-arm.nuspec",
         "build/Microsoft.Net.Native.SharedLibrary-arm.props",
         "build/Microsoft.Net.Native.SharedLibrary-arm.targets",
+        "microsoft.net.native.sharedlibrary-arm.1.6.0.nupkg.sha512",
+        "microsoft.net.native.sharedlibrary-arm.nuspec",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltoc",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltocpdb",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.iltoc",
@@ -17512,14 +17491,14 @@
       ]
     },
     "Microsoft.Net.Native.SharedLibrary-x64/1.6.0": {
-      "sha512": "pLNmswGR+pzjLOgq+0oABz3e2C5XjSmTo81MFPSN9CeKyYiMb2eybU1fJRjyk86XFMfENK26gGUSVMhAo4zH/g==",
+      "sha512": "iGRwIqFwc2zH1iRjjWKzVHcu9Ri2A/5F9Zozu/BwtVaBYv2bc+mPHzfEg2dTeE5IrZ9jDqPOUCPXChHxirQ2bg==",
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-x64/1.6.0",
       "files": [
-        "Microsoft.Net.Native.SharedLibrary-x64.1.6.0.nupkg.sha512",
-        "Microsoft.Net.Native.SharedLibrary-x64.nuspec",
         "build/Microsoft.Net.Native.SharedLibrary-x64.props",
         "build/Microsoft.Net.Native.SharedLibrary-x64.targets",
+        "microsoft.net.native.sharedlibrary-x64.1.6.0.nupkg.sha512",
+        "microsoft.net.native.sharedlibrary-x64.nuspec",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltoc",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltocpdb",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.iltoc",
@@ -17912,14 +17891,14 @@
       ]
     },
     "Microsoft.Net.Native.SharedLibrary-x86/1.6.0": {
-      "sha512": "AC1O3na4oqgWdvjoMjVPvt2vCO9VESTkArknbTlep5NWVRdMU2nay4XHYWBleOhweE2kw52kJHv1BGN0dcXjhQ==",
+      "sha512": "peP8zi7V5K7I8bSH3m1aIW4syZahCenajymxymU4eCIDhPFPz7ZwQB8IoFb5M2Y1DTJPKGbXuPd2MV3x4eFMeg==",
       "type": "package",
       "path": "microsoft.net.native.sharedlibrary-x86/1.6.0",
       "files": [
-        "Microsoft.Net.Native.SharedLibrary-x86.1.6.0.nupkg.sha512",
-        "Microsoft.Net.Native.SharedLibrary-x86.nuspec",
         "build/Microsoft.Net.Native.SharedLibrary-x86.props",
         "build/Microsoft.Net.Native.SharedLibrary-x86.targets",
+        "microsoft.net.native.sharedlibrary-x86.1.6.0.nupkg.sha512",
+        "microsoft.net.native.sharedlibrary-x86.nuspec",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltoc",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.Concurrent.iltocpdb",
         "tools/SharedLibrary/chk/AnalysisILToc/System.Collections.iltoc",
@@ -24443,11 +24422,6 @@
         "ref/xamarinwatchos10/_._",
         "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
-    },
-    "PlayFabSDK/1.0.0": {
-      "type": "project",
-      "path": "../PlayFabClientSDK/PlayFabSDK.csproj",
-      "msbuildProject": "../PlayFabClientSDK/PlayFabSDK.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -24462,20 +24436,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Siva Katir\\Desktop\\UWP-PlayFab\\Client Sample\\MicrosoftPassport.csproj",
-      "projectName": "MicrosoftPassport",
-      "projectPath": "C:\\Users\\Siva Katir\\Desktop\\UWP-PlayFab\\Client Sample\\MicrosoftPassport.csproj",
-      "projectJsonPath": "C:\\Users\\Siva Katir\\Desktop\\UWP-PlayFab\\Client Sample\\project.json",
-      "projectStyle": "ProjectJson",
-      "frameworks": {
-        "uap10.0": {
-          "projectReferences": {
-            "C:\\Users\\Siva Katir\\Desktop\\UWP-PlayFab\\PlayFabClientSDK\\PlayFabSDK.csproj": {
-              "projectPath": "C:\\Users\\Siva Katir\\Desktop\\UWP-PlayFab\\PlayFabClientSDK\\PlayFabSDK.csproj"
-            }
-          }
-        }
-      }
+      "projectUniqueName": "C:\\Users\\Siva Katir\\Documents\\GitHub\\UWPExample\\Client Sample",
+      "projectName": "Client Sample",
+      "projectPath": "C:\\Users\\Siva Katir\\Documents\\GitHub\\UWPExample\\Client Sample",
+      "projectJsonPath": "C:\\Users\\Siva Katir\\Documents\\GitHub\\UWPExample\\Client Sample\\project.json",
+      "projectStyle": "ProjectJson"
     },
     "dependencies": {
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.3.1",

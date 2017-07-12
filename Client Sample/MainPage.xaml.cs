@@ -31,7 +31,6 @@ namespace SDKTemplate
     public sealed partial class MainPage : Page
     {
         private string userId;
-        private string publicKeyHint;
 
         public MainPage()
         {
@@ -41,7 +40,6 @@ namespace SDKTemplate
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             userId = ApplicationData.Current.LocalSettings.Values["userId"] as string ?? string.Empty;
-            publicKeyHint = ApplicationData.Current.LocalSettings.Values["publicKeyHint"] as string ?? string.Empty;
 
             UpdateUI();
         }
@@ -49,7 +47,7 @@ namespace SDKTemplate
         private void UpdateUI()
         {
             RegisteredUserName.Text = userId;
-            if (userId.Length != 0 && publicKeyHint.Length != 0)
+            if (userId.Length != 0)
             {
                 SignInWithHelloContent.Visibility = Visibility.Visible;
                 SignInWithPasswordContent.Visibility = Visibility.Collapsed;
@@ -67,25 +65,19 @@ namespace SDKTemplate
             SignInWithHelloButton.IsEnabled = false;
             SignInAsSomeoneElseButton.IsEnabled = false;
 
-            var unlinkResult = await PlayFab.PlayFabClientAPI.UnlinkWindowsHelloAsync(new UnlinkWindowsHelloAccountRequest
-            {
-                PublicKeyHint = publicKeyHint
-            });
+            // Only unlink and delete credentials if removing the account from the device.
+            // If just "logging out" leave these intact.
+            //var unlink = await PlayFabWindowsHello.UnlinkAccount(userId);
 
-            if (unlinkResult.Error != null)
-            {
-                // TODO: Handle various unlink account errors
-            }
-            else
-            {
-                // Remove the credential from the key credential manager, to free up space on the device.
-                await Util.TryDeleteCredentialAccountAsync(userId);
+            //if (unlink)
+            //{
+                // Remove the credential from the key credential manager
+                // await Util.TryDeleteCredentialAccountAsync(userId);
+            //}
 
-                // Remove our app's knowledge of the user.
-                ApplicationData.Current.LocalSettings.Values.Remove("userId");
-                ApplicationData.Current.LocalSettings.Values.Remove("publicKeyHint");
-                userId = string.Empty;
-            }
+            // Remove our app's knowledge of the user.
+            ApplicationData.Current.LocalSettings.Values.Remove("userId");
+            userId = string.Empty;
 
             SignInWithHelloButton.IsEnabled = true;
             SignInAsSomeoneElseButton.IsEnabled = true;
@@ -124,64 +116,6 @@ namespace SDKTemplate
             }
         }
 
-        private async Task<bool> SignInWithHelloAsync()
-        {
-            // Open the existing user key credential.
-            KeyCredentialRetrievalResult retrieveResult = await KeyCredentialManager.OpenAsync(userId);
-
-            if (retrieveResult.Status != KeyCredentialStatus.Success)
-            {
-                return false;
-            }
-
-            KeyCredential userCredential = retrieveResult.Credential;
-
-            var challengeResult = await PlayFab.PlayFabClientAPI.GetWindowsHelloChallengeAsync(new GetWindowsHelloChallengeRequest
-            {
-                PublicKeyHint = publicKeyHint,
-                TitleId = PlayFab.PlayFabSettings.TitleId
-            });
-
-            if (challengeResult.Error != null)
-            {
-                // TODO: Failed to get a challenge, handle the error
-                MessageDialog message = new MessageDialog($"Error during getting challenge: {challengeResult.Error.Error}");
-                await message.ShowAsync();
-                return false;
-            }
-
-            // Sign the challenge using the user's KeyCredential.
-            IBuffer challengeBuffer = CryptographicBuffer.DecodeFromBase64String(challengeResult.Result.Challenge);
-            KeyCredentialOperationResult opResult = await userCredential.RequestSignAsync(challengeBuffer);
-
-            if (opResult.Status != KeyCredentialStatus.Success)
-            {
-                MessageDialog message = new MessageDialog("Failed to have user sign the challenge string.");
-                await message.ShowAsync();
-                return false;
-            }
-
-            // Get the signature.
-            IBuffer signatureBuffer = opResult.Result;
-
-            // Send the signature back to the server to confirm our identity.
-            // The publicKeyHint tells the server which public key to use to verify the signature.
-            var loginResult = await PlayFab.PlayFabClientAPI.LoginWithWindowsHelloAsync(new LoginWithWindowsHelloRequest
-            {
-                ChallengeSignature = CryptographicBuffer.EncodeToBase64String(signatureBuffer),
-                PublicKeyHint = publicKeyHint
-            });
-
-            
-            if (loginResult.Error != null)
-            {
-                MessageDialog message = new MessageDialog($"Error during login: {loginResult.Error.Error}");
-                await message.ShowAsync();
-                return false;
-            }
-
-            return true;
-        }
 
         private async void SignInWithHello()
         {
@@ -191,7 +125,7 @@ namespace SDKTemplate
             SignInWithHelloButton.IsEnabled = false;
             SignInAsSomeoneElseButton.IsEnabled = false;
 
-            bool result = await SignInWithHelloAsync();
+            bool result = await PlayFabWindowsHello.SignInWithHelloAsync(userId);
 
             ProgressRing.IsActive = false;
             SignInWithHelloButton.IsEnabled = true;

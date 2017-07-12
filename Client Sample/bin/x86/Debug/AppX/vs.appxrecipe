@@ -10,13 +10,16 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>56cb3cf4-2e83-4965-b6aa-82238da95f98</PackageIdentityName>
     <PackageIdentityPublisher>CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Siva Katir\Desktop\UWP-PlayFab\Client Sample\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Siva Katir\Documents\GitHub\UWPExample\Client Sample\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>933F6A9645789194F210D885A372B8FC93C044A0CCB352714117C3756B6259F7</RegisteredManifestChecksum>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\Siva Katir\Documents\GitHub\UWPExample\Client Sample\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>F7B4FEDEF7A64D8219656B95161B6275A51FC7F9E0636C8B0A1A689768668FDC</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>Microsoft.SDKSamples.MicrosoftPassport.CS_1.0.0.0_x86__8wekyb3d8bbwe</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>Microsoft.SDKSamples.MicrosoftPassport.CS_8wekyb3d8bbwe!App</RegisteredUserModeAppID>
     <RegisteredPackageID>Microsoft.SDKSamples.MicrosoftPassport.CS</RegisteredPackageID>
@@ -25,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Siva Katir\Desktop\UWP-PlayFab\Client Sample\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Siva Katir\Documents\GitHub\UWPExample\Client Sample\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-07T23:48:16.925</Modified>
+      <Modified>2017-07-12T18:14:50.406</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Siva Katir\Desktop\UWP-PlayFab\Client Sample\bin\x86\Debug\MicrosoftPassport.exe">
+    <AppxPackagedFile Include="C:\Users\Siva Katir\Documents\GitHub\UWPExample\Client Sample\bin\x86\Debug\MicrosoftPassport.exe">
       <PackagePath>entrypoint\MicrosoftPassport.exe</PackagePath>
-      <Modified>2017-03-07T23:48:14.490</Modified>
+      <Modified>2017-07-12T18:14:49.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Siva Katir\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -496,103 +499,103 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T06:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\bin\Debug\PlayFabClientSDK.dll">
+    <AppxPackagedFile Include="C:\Users\Siva Katir\Documents\GitHub\UWPExample\PlayFabClientSDK\bin\Debug\PlayFabClientSDK.dll">
       <PackagePath>PlayFabClientSDK.dll</PackagePath>
-      <Modified>2017-03-07T23:45:08.989</Modified>
+      <Modified>2017-07-12T17:33:42.476</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Siva Katir\Desktop\UWP-PlayFab\SharedContent\cs\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Siva Katir\Documents\GitHub\UWPExample\SharedContent\cs\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-02-13T19:08:52.231</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Siva Katir\Desktop\UWP-PlayFab\SharedContent\media\smalltile-sdk.png">
+    <AppxPackagedFile Include="C:\Users\Siva Katir\Documents\GitHub\UWPExample\SharedContent\media\smalltile-sdk.png">
       <PackagePath>Assets\smallTile-sdk.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-02-13T19:08:54.084</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Siva Katir\Desktop\UWP-PlayFab\SharedContent\media\splash-sdk.png">
+    <AppxPackagedFile Include="C:\Users\Siva Katir\Documents\GitHub\UWPExample\SharedContent\media\splash-sdk.png">
       <PackagePath>Assets\splash-sdk.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-02-13T19:08:54.097</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Siva Katir\Desktop\UWP-PlayFab\SharedContent\media\squaretile-sdk.png">
+    <AppxPackagedFile Include="C:\Users\Siva Katir\Documents\GitHub\UWPExample\SharedContent\media\squaretile-sdk.png">
       <PackagePath>Assets\squareTile-sdk.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-02-13T19:08:54.110</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Siva Katir\Desktop\UWP-PlayFab\SharedContent\media\storelogo-sdk.png">
+    <AppxPackagedFile Include="C:\Users\Siva Katir\Documents\GitHub\UWPExample\SharedContent\media\storelogo-sdk.png">
       <PackagePath>Assets\storeLogo-sdk.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-02-13T19:08:54.122</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Siva Katir\Desktop\UWP-PlayFab\Client Sample\bin\x86\Debug\MicrosoftPassport.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Siva Katir\Documents\GitHub\UWPExample\Client Sample\bin\x86\Debug\MicrosoftPassport.xr.xml">
       <PackagePath>MicrosoftPassport.xr.xml</PackagePath>
       <Modified>2017-03-07T23:29:28.676</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2017-02-13T21:40:15.888</Modified>
+      <Modified>2017-04-05T23:28:47.889</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Siva Katir\Desktop\UWP-PlayFab\Client Sample\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Siva Katir\Documents\GitHub\UWPExample\Client Sample\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-07T23:48:16.674</Modified>
+      <Modified>2017-07-12T18:12:26.861</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Siva Katir\Desktop\UWP-PlayFab\Client Sample\bin\x86\Debug\Core\MicrosoftPassport.exe">
+    <AppxPackagedFile Include="C:\Users\Siva Katir\Documents\GitHub\UWPExample\Client Sample\bin\x86\Debug\Core\MicrosoftPassport.exe">
       <PackagePath>MicrosoftPassport.exe</PackagePath>
-      <Modified>2017-03-07T23:48:16.918</Modified>
+      <Modified>2017-07-12T18:14:50.394</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
       <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.24920.0</Version>
+      <Version>1.1.25129.1</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.24920.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25129.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\ARM\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
       <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.24920.0</Version>
+      <Version>1.1.25129.1</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.24920.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25129.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\x64\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
       <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.24920.0</Version>
+      <Version>1.1.25129.1</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.24920.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.25129.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\x86\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25017.0</Version>
+      <Version>14.0.25023.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25017.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25023.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25017.0</Version>
+      <Version>14.0.25023.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25017.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25023.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25017.0</Version>
+      <Version>14.0.25023.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25017.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25023.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>

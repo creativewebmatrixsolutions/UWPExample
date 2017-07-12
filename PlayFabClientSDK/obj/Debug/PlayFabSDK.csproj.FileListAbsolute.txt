@@ -12,3 +12,10 @@ C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\bin\Debug\Newtonsoft.Js
 C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\obj\Debug\PlayFabSDK.csprojResolveAssemblyReference.cache
 C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\obj\Debug\PlayFabClientSDK.dll
 C:\Users\Siva Katir\Desktop\UWP-PlayFab\PlayFabClientSDK\obj\Debug\PlayFabClientSDK.pdb
+C:\Users\Siva Katir\Documents\GitHub\UWPExample\PlayFabClientSDK\bin\Debug\PlayFabClientSDK.dll
+C:\Users\Siva Katir\Documents\GitHub\UWPExample\PlayFabClientSDK\bin\Debug\PlayFabClientSDK.pdb
+C:\Users\Siva Katir\Documents\GitHub\UWPExample\PlayFabClientSDK\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Siva Katir\Documents\GitHub\UWPExample\PlayFabClientSDK\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Siva Katir\Documents\GitHub\UWPExample\PlayFabClientSDK\obj\Debug\PlayFabSDK.csprojResolveAssemblyReference.cache
+C:\Users\Siva Katir\Documents\GitHub\UWPExample\PlayFabClientSDK\obj\Debug\PlayFabClientSDK.dll
+C:\Users\Siva Katir\Documents\GitHub\UWPExample\PlayFabClientSDK\obj\Debug\PlayFabClientSDK.pdb

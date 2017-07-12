@@ -27,6 +27,7 @@ using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using PlayFab;
 using PlayFab.ClientModels;
 
 namespace SDKTemplate
@@ -58,95 +59,17 @@ namespace SDKTemplate
             LaterButton.IsEnabled = false;
             StartUsingWindowsHelloButton.IsEnabled = false;
 
-            // Create the key credential with Passport APIs
-            IBuffer publicKey = await CreatePassportKeyCredentialAsync();
-            if (publicKey != null)
-            {
-                // Register the public key and attestation of the key credential with the server
-                // In a real-world scenario, this would likely also include:
-                // - Certificate chain for attestation endorsement if available
-                // - Status code of the Key Attestation result : Included / retrieved later / retry type
-                if (await RegisterPassportCredentialWithServerAsync(publicKey))
-                {
-                    // Remember that this is the user whose credentials have been registered
-                    // with the server.
-                    ApplicationData.Current.LocalSettings.Values["userId"] = userId;
+            var register = await PlayFabWindowsHello.RegisterWindowsHello(userId);
 
-                    // When communicating with the server in the future, we pass a hash of the
-                    // public key in order to identify which key the server should use to verify the challenge.
-                    HashAlgorithmProvider hashProvider = HashAlgorithmProvider.OpenAlgorithm(HashAlgorithmNames.Sha256);
-                    IBuffer publicKeyHash = hashProvider.HashData(publicKey);
-                    ApplicationData.Current.LocalSettings.Values["publicKeyHint"] = CryptographicBuffer.EncodeToBase64String(publicKeyHash);
+            // Registration successful. Continue to the signed-in state.
+            if (register)
+                Frame.Navigate(typeof(AccountOverviewPage));
 
-                    // Registration successful. Continue to the signed-in state.
-                    Frame.Navigate(typeof(AccountOverviewPage));
-                }
-                else
-                {
-                    // Delete the failed credentials from the device.
-                    await Util.TryDeleteCredentialAccountAsync(userId);
-
-                    MessageDialog message = new MessageDialog("Failed to register with the server.");
-                    await message.ShowAsync();
-                }
-            }
             ProgressRing.IsActive = false;
             LaterButton.IsEnabled = true;
             StartUsingWindowsHelloButton.IsEnabled = true;
         }
 
-        private async Task<IBuffer> CreatePassportKeyCredentialAsync()
-        {
-            // Create a new KeyCredential for the user on the device.
-            KeyCredentialRetrievalResult keyCreationResult = await KeyCredentialManager.RequestCreateAsync(userId, KeyCredentialCreationOption.ReplaceExisting);
-            if (keyCreationResult.Status == KeyCredentialStatus.Success)
-            {
-                // User has autheniticated with Windows Hello and the key credential is created.
-                KeyCredential userKey = keyCreationResult.Credential;
-                return userKey.RetrievePublicKey();
-            }
-            else if (keyCreationResult.Status == KeyCredentialStatus.NotFound)
-            {
-                MessageDialog message = new MessageDialog("To proceed, Windows Hello needs to be configured in Windows Settings (Accounts -> Sign-in options)");
-                await message.ShowAsync();
-
-                return null;
-            }
-            else if (keyCreationResult.Status == KeyCredentialStatus.UnknownError)
-            {
-                MessageDialog message = new MessageDialog("The key credential could not be created. Please try again.");
-                await message.ShowAsync();
-
-                return null;
-            }
-
-            return null;
-        }
-
-
-        // Register the user and device with the server
-        private async Task<bool> RegisterPassportCredentialWithServerAsync(IBuffer publicKey)
-        {
-            // Include the name of the current device for the benefit of the user.
-            // The server could support a Web interface that shows the user all the devices they
-            // have signed in from and revoke access from devices they have lost.
-
-            var hostNames = NetworkInformation.GetHostNames();
-            var localName = hostNames.FirstOrDefault(name => name.DisplayName.Contains(".local"));
-            string computerName = localName.DisplayName.Replace(".local", "");
-
-            var registerResult = await PlayFab.PlayFabClientAPI.RegisterWithWindowsHelloAsync(new RegisterWithWindowsHelloRequest
-            {
-                DeviceName = computerName,
-                PublicKey = CryptographicBuffer.EncodeToBase64String(publicKey),
-                UserName = userId
-            });
-
-            if (registerResult.Error != null)
-                return false;
-
-            return true;
-        }
 
         private async void LaunchHyperlink(object sender, RoutedEventArgs e)
         {
